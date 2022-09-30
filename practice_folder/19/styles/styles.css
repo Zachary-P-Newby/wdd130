@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: wheat;
+    background-color: whitesmoke;
 }
 
 nav {
@@ -14,7 +14,7 @@ a {
 }
 
 h1 {
-    color: yellowgreen;
+    color: slateblue;
     margin: 2%;
 }
 
@@ -27,7 +27,19 @@ p {
     padding: 10px;
 }
 
-foooter {
+footer {
     background-color: navy;
     color: whitesmoke;
+}
+
+.main-para {
+
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+#active {
+    background-color: white;
+    color: saddlebrown;
+
 }
