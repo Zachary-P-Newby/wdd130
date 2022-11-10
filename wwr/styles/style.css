@@ -246,7 +246,6 @@ h2{
 #salmon_info{
     grid-column: 2/3;
     display: inline;
-    font-size: 1.25em;
     max-height: 400px;
     margin: 10px;
 }
@@ -273,7 +272,6 @@ h2{
     grid-column: 2/3;
     display: inline;
     max-height: 400px;
-    font-size: 1.25em;
     margin: 10px;
 }
 
@@ -299,7 +297,6 @@ h2{
     grid-column: 2/3;
     display: inline;
     max-height: 400px;
-    font-size: 1.25em;
     margin: 10px;
 }
 
