@@ -4,54 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Zach's Labratory</title>
 </head>
 <body>
     <header>
-        <img id="logo" src="#" alt="#">
-        <a href="about.html">About</a>
-        <a href="gallery.html">Gallery</a>
+        <div id="nav" role="Navigation">
+            <img id="logo" src="images/profile_pic.jpg" alt="PLACEFOLDER">
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
         
         <div id="headline">
-            <h1>Zach's Labratory</h1>
+            <h1>Zach's Laboratory</h1>
         </div>
 
         <!--There was going to be a serach bar, but I lack
             Java script knowledge and enough content to justify making it.-->
-        <div id="dropdown" role="Navigation Dropdown">
-            <button id="drpdwn_button">Navigation</button>
-            <div id="drpdwn_content">
+        <div id="dropdown">
+            <button id="dropdown_button">Navigation</button>
+            <div id="dropdown-content">
                 <!--This will be for when I add addtional pages-->
-                <a id="home_link" href="index.html">Home</a>
+                <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="gallery.html">Gallery</a>
             </div>
         </div>
         </header>
 
-    <main>
-        <div class="img_holder">
-            <img class="img_link" src="#" alt="#">
+    <main id="home">
+        <div id="img_holder_1">
+            <img class="img_link" src="images/about_banner.png" alt="About">
             
-            <form method="get" action="about.html">
-                <button type="link">About</button>
+            <form class = "button" id ="button_1" method="get" action="about.html">
+                <button type="button">About</button>
             </form>
         </div>
         
-        <div class="img_holder">
-            <img class="img_link" src="#" alt="#">
+        <div id="img_holder_2">
+            <img class="img_link" src="images/gallery_banner.png" alt="Gallery">
             
-            <form method="get" action="gallery.html">
-                <button type="link">Gallery</button>
+            <form class = "button" id ="button_2" method="get" action="gallery.html">
+                <button type="button">Gallery</button>
             </form>
         </div>
 
         <div id="bio">
-            <img id="picture" src="#" alt="Me">
+            <img id="picture" src="images/20221102_153106.jpg" alt="Replace this.">
             <h3>About Me</h3>
             <p id="Bio">
-                Insert text here
-                Banana
+                Hi, I'm Zach Newby. I am a computer science student from Montana and Missouri who like to draw, write, create, and make people happy. I created this website for my Web Design Fundamentals class as a place to share my creations. I call my laboratory because "LAB" is a good acronym for library, art gallery, and blog; this website will function as all three. Whether it be comics, short stories, drawings, or blog posts I can feature all three here. Plus I have always liked that quirky inventor's laboratory aesthetic. 
             </p>
         </div>
     </main>
@@ -61,11 +63,11 @@
             <p>Zach's Labratory &copy; 2022 - Zach Newby </p>
         </div>
 
-        <a href="site-plan.html">Site Plan</a>
+        <a id="siteplan" href="site-plan.html">Site Plan</a>
         
         <div id="social_media">
-            <h2>Social Media</h2>
-            <a href="https://www.instagram.com/zpnewby/">Instagram</a>
+            <h3>Social Media</h3>
+            <a href="https://www.instagram.com/zpnewby/">Instagram</a> 
         </div>
     </footer>
 </body>
