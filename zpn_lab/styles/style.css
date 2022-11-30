@@ -26,11 +26,13 @@
   }
 
 
-/* Homepage */
+@media screen {
+    /* Homepage */
 body {
     background-color: #FBFBF2;
     padding: 0;
     margin: 0;
+    width: auto;
 }
 
 a {
@@ -299,4 +301,6 @@ footer {
     align-content: center;
     margin: 0 auto;
     padding: 5%;
+}
+
 }
