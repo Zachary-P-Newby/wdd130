@@ -403,3 +403,21 @@ footer {
     text-align: center;
 }
 
+/*Gallery Time!*/
+#gallery #image_grid {
+    display: flexbox;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#gallery img {
+    max-width: 1000px;
+    max-height: 1000px;
+    padding: 5px;
+}
+
+.sketch_scan {
+    max-width: 500px;
+    max-height: 500px;
+}
