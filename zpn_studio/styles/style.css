@@ -301,6 +301,7 @@ footer {
     max-height: 100%;
     max-width: 100%;
     padding: 0;
+    margin-bottom: 0;
 }
 
 #copyright{
@@ -403,21 +404,23 @@ footer {
     text-align: center;
 }
 
+
 /*Gallery Time!*/
-#gallery #image_grid {
+#gallery #image_flexbox {
     display: flexbox;
     padding: 10px;
     margin: 0 auto;
     text-align: center;
+    align-items: center;
+    justify-items: center;
 }
+
 
 #gallery img {
-    max-width: 1000px;
-    max-height: 1000px;
-    padding: 5px;
-}
-
-.sketch_scan {
     max-width: 500px;
     max-height: 500px;
+    border: #4E3728 12px solid;
+    margin: 5px;
+    align-self: center;
 }
+
