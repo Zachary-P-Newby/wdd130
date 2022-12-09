@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Zach's Labratory</title>
+    <title>Zach's Studio</title>
 </head>
 <body>
     <header>
@@ -32,18 +32,129 @@
         </div>
         </header>
 
-    <main id="gallery" role="Gallery">
+    <main id="gallery">
         
-        <div id="image_flexbox">
-            <img src="images/bearclaw_dragon.png" alt="Bearclaw Dragon">
-                <img src="images/Emerald_Hill_Reimagined.png" alt="Emerald Hill Reimagined Sega Don't sue!">
-                <img src="images/Hermit_Island.png" alt="Kaijune 2022 June 6th- Crab">
-                <img src="images/R-16 Kaiju Jet_Final.png" alt="Kaijune 2022 June 4th- Jet">
-                <img class="sketch_scan" src="images/Scan_20220516.png" alt="Picture For Grandparents + Frog Study">
-                <img class="sketch_scan" src="images/Scan_20220516 (2).png" alt="Sketches">
-                <img class="sketch_scan" src="images/Scan_20220516 (3).png" alt="Sketches and Shading Practice">
-                <img src="images/grumpy_iguanna.png" alt="He not in good mood.">
+        <div id="the_modal">
+            <div class="row">
+                <div class="column">
+                    <img src="images/bearclaw_dragon.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/Emerald_Hill_Reimagined.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/Hermit_Island.png" onclick="openModal();currentSlide(3)" class="hover-shadow" >
+                </div>
+                <div class="column">
+                    <img src="images/mochi_dragon_eggs.png" onclick="openModal();currentSlide(4)" class="hover-shadow" >
+                </div>
+            </div>
+    
+            <div id="Modal_1" class="modal">
+                
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                
+                <div class="modal-content">
+    
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="images/bearclaw_dragon.png" alt="Bearclaw Dragon- Smaugust 2022" style="width:100%;">
+                    </div>
+    
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="images/Emerald_Hill_Reimagined.png" alt="Emerald Hill Reimagined Sega Don't sue!" style="width:100%;">
+                    </div>
+    
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="images/Hermit_Island.png" alt="Kaijune 2022 June 6th- Crab" style="width:100%;">
+                    </div>
+    
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="images/mochi_dragon_eggs.png" alt="Mochi Dragon Eggs- Smaugust 2022" style="width:100%;">
+                    </div>
+    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+    
+                    <!-- Thumbnail image controls -->
+                    <div class="column">
+                        <img class="demo" src="images/bearclaw_dragon.png" onclick="currentSlide(1)" alt="Bearclaw Dragon- Smaugust 2022">
+                    </div>
+      
+                    <div class="column">
+                        <img class="demo" src="images/Emerald_Hill_Reimagined.png" onclick="currentSlide(2)" alt="Emerald Hill Reimagined Sega Don't sue!">
+                    </div>
+      
+                    <div class="column">
+                        <img class="demo" src="images/Hermit_Island.png" onclick="currentSlide(3)" alt="Kaijune 2022 June 6th- Crab">
+                    </div>
+      
+                    <div class="column">
+                        <img class="demo" src="images/mochi_dragon_eggs.png" onclick="currentSlide(4)" alt="Mochi Dragon Eggs- Smaugust 2022">
+                    </div>
+      
+                </div>
         </div>
+
+    </div>
+
+    <div id="additional_images">
+        <img src="images/R-16 Kaiju Jet_Final.png" alt="Kaijune 2022 June 4th- Jet">
+        <img class="sketch_scan" src="images/Scan_20220516.png" alt="Picture For Grandparents + Frog Study">
+        <img class="sketch_scan" src="images/Scan_20220516 (2).png" alt="Sketches">
+        <img class="sketch_scan" src="images/Scan_20220516 (3).png" alt="Sketches and Shading Practice">
+        <img src="images/grumpy_iguanna.png" alt="He not in good mood.">
+    </div>
+        
+        <script>
+            // Open the Modal
+            function openModal() {
+              document.getElementById("Modal_1").style.display = "block";
+            }
+            
+            // Close the Modal
+            function closeModal() {
+              document.getElementById("Modal_1").style.display = "none";
+            }
+            
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            // Next/previous controls
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            // Thumbnail image controls
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
 
     </main>
 
@@ -51,6 +162,8 @@
     <footer>
         <div id="copyright">
             <p>Zach's Studio &copy; 2022 - Zach Newby </p>
+            <p>Code taken from W3Schools.com</p>
+            <a href="https://www.w3schools.com/howto/howto_js_lightbox.asp">W3Schools</a>
         </div>
 
         <a id="siteplan" href="site-plan.html">Site Plan</a>
@@ -60,7 +173,6 @@
             <a href="https://www.instagram.com/zpnewby/">Instagram</a> 
         </div>
     </footer>
-
 
 </body>
 </html>
