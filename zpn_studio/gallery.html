@@ -9,10 +9,10 @@
 </head>
 <body>
     <header>
-        <div id="nav" role="Navigation">
-            <a id="logo_link" href ="index.html"><img id="logo" src="images/profile_pic.jpg" alt="PLACEhOLDER" href="index.html"></a>
-            <a id ="nav_link" href="about.html">About</a>
-            <a id ="nav_link" href="gallery.html">Gallery</a>
+        <div id="nav">
+            <a href ="index.html"><img id="logo" src="images/profile_pic.jpg" alt="PLACEhOLDER"></a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
         </div>
         
         <div id="headline">
@@ -37,16 +37,16 @@
         <div id="the_modal">
             <div class="row">
                 <div class="column">
-                    <img src="images/bearclaw_dragon.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                    <img src="images/bearclaw_dragon.png" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Bearclaw Dragon- Smaugust 2022">
                 </div>
                 <div class="column">
-                    <img src="images/Emerald_Hill_Reimagined.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                    <img src="images/Emerald_Hill_Reimagined.png" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Emerald Hill Reimagined Sega Don't sue!">
                 </div>
                 <div class="column">
-                    <img src="images/Hermit_Island.png" onclick="openModal();currentSlide(3)" class="hover-shadow" >
+                    <img src="images/Hermit_Island.png" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Kaijune 2022 June 6th- Crab">
                 </div>
                 <div class="column">
-                    <img src="images/mochi_dragon_eggs.png" onclick="openModal();currentSlide(4)" class="hover-shadow" >
+                    <img src="images/mochi_dragon_eggs.png" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="Mochi Dragon Eggs- Smaugust 2022">
                 </div>
             </div>
     
@@ -106,11 +106,15 @@
     </div>
 
     <div id="additional_images">
-        <img src="images/R-16 Kaiju Jet_Final.png" alt="Kaijune 2022 June 4th- Jet">
-        <img class="sketch_scan" src="images/Scan_20220516.png" alt="Picture For Grandparents + Frog Study">
-        <img class="sketch_scan" src="images/Scan_20220516 (2).png" alt="Sketches">
-        <img class="sketch_scan" src="images/Scan_20220516 (3).png" alt="Sketches and Shading Practice">
-        <img src="images/grumpy_iguanna.png" alt="He not in good mood.">
+        
+        <img id= "img_2" class="sketch_scan" src="images/sketch_journal_1.png" alt="Picture For Grandparents + Frog Study">
+        <img id= "img_3" class="sketch_scan" src="images/sketch_journal_2.png" alt="Sketches">
+        <img id= "img_4" class="sketch_scan" src="images/sketch_journal_3.png" alt="Sketches and Shading Practice">
+        <div>
+            <img id= "img_1" src="images/R-16_Kaiju_Jet_Final.png" alt="Kaijune 2022 June 4th- Jet">
+            <img id= "img_5" src="images/grumpy_iguanna.png" alt="He not in good mood.">
+        </div>
+        
     </div>
         
         <script>
